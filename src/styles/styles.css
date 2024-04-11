@@ -19,6 +19,11 @@
     box-sizing: border-box;
     font-family: "Nunito",sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
@@ -286,6 +291,46 @@ button[type="submit"]:focus {
     margin: 5px auto; /* Alineación vertical al centro */
 }
 
+.footer-container {
+    background-color:var(--primary-lightblue);
+}
+
+.content-container {
+    background-color:var(--primary-lightblue);
+    display:flex;
+}
+
+.img-footer-logo {
+    width: 70%;
+}
+
+.subtitle {
+    font-size: 170%;
+    color: var(--primary-white);
+}
+
+.footer-link {
+    margin-left: 5%;
+    font-size: 120%;
+    color: var(--primary-white);
+}
+
+.footer-community, .footer-service, .footer-followUs {
+    margin-top: 2%;
+    margin-left: 13%;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul li::marker {
+    color: var(--primary-white);
+}
+
+.footer-copyright {
+    color: var(--primary-white);
+}
 
 @media screen and (max-width: 960px) {
     header .navbar-list {
