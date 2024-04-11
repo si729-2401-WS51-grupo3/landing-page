@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="icon" href="src/assets/icon.ico" type="image/x-icon">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="/src/scripts/main.js"></script>
+    <title>MindCare</title>
+</head>
+
+<body>
+
+    <input type="checkbox" id="check">
+    <header class="navbar-container">
+        <div class="logo">
+            <img src="src/assets/logoCeleste.png" alt="company logo">
+        </div>
+        <nav class="navbar-list">
+            <a href="#home" class="navbar-link">Inicio</a>
+            <a href="#servicios" class="navbar-link">Servicios</a>
+            <a href="#about" class="navbar-link">Nosotros</a>
+            <a href="#price" class="navbar-link">Planes</a>
+            <a href="#contact" class="navbar-link">Contacto</a>
+            <a href="login.html" class="navbar-link">Iniciar Sesión</a>
+            <a href="signup.html" class="navbar-link" id="sign-up">Crear Cuenta</a>
+        </nav>
+        <label for="check">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+    </header>
+
+    <section class="home" id="home">
+        <div class="hom-container">
+            <h2>Encuentra claridad<br><span>descubre tu fuerza interior</span></h2>
+            <p>
+                La terapia psicológica es un viaje de autodescubrimiento y transformación, donde el individuo encuentra
+                el apoyo y las herramientas necesarias para enfrentar sus desafíos emocionales y alcanzar su máximo
+                potencial. A través del poder del diálogo, la comprensión empática y la colaboración, la terapia ofrece
+                un camino hacia la sanación, el crecimiento personal y una vida más plena y satisfactoria.
+            </p>
+        </div>
+    </section>
+    <section class="servicios" id="servicios">
+        <h2 class="title-section">¿Por qué atenderse en MindCare?</h2>
+       
+    </section>
+    <section class="about" id="about">
+        <h2 class="title-section">Nosotros</h2>
+       
+    </section>
+    <section class="section__container" id="price">
+        <h2 class="title-section">Planes</h2>
+        <br><br><br>
+        
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="title-section">Contáctanos</h2>
+        <br><br><br>
+        <div class="contact-container">
+            <form id="contact-form" action="procesar_formulario.php" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required aria-required="true"
+                        placeholder="Introduce tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required aria-required="true"
+                        placeholder="Introduce tu correo electrónico">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required aria-required="true"
+                        placeholder="Introduce tu mensaje"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="mensaje-exito" style="display: none;">
+                <p>Su consulta se ha enviado exitosamente. nos contactaremos con usted </p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
