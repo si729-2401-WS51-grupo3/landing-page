@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingresar</title>
-    <!-- Enlace a Font Awesome para los iconos -->
+    <link rel="icon" href="assets/logo-getwork.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="/src/styles/login.css">
 </head>
-<body>   
+<body>
+       
     <div class="contenedor active" id="contenedor">       
         <div id="background"></div>
         <div class="container">
@@ -16,14 +17,13 @@
                 <a href="index.html" class="back-button">← Volver</a>
                 <br><br>
                 <h2 class="title">Inicio de sesión</h2>
-                <p class="description">Ingresa tus credenciales.</p>
                 <!-- Campo de correo electrónico -->
                 <div class="form-group">
                     <div class="label-container">
                         <label for="email">Correo electrónico:</label>
                     </div>
                     <input type="email" id="email" placeholder="Ingresa tu correo electrónico">
-                    <span id="emailError" class="error-message" style="display: none;">Ingrese un correo electrónico válido.</span>
+                    <span id="emailError" class="error-message" style="display: none; color: red;">Ingrese un correo electrónico válido.</span>
                 </div>
                 <div class="form-group">
                     <div class="label-container">
@@ -32,9 +32,9 @@
                     <div class="password-container">
                         <input type="password" id="password" placeholder="Ingresa tu contraseña">
                     </div>
-                    <span id="passwordError" class="error-message" style="display: none;">La contraseña debe tener al menos 8 caracteres.</span>
+                    <span id="passwordError" class="error-message" style="display: none; color: red;">La contraseña debe tener al menos 8 caracteres.</span>
                     <br><br>
-                    <p class="register-link">¿No tienes cuenta? <a href="signin.html">Regístrate aquí</a>.</p>    
+                    <p class="register-link">¿No tienes cuenta? <a href="signup.html">Regístrate aquí</a>.</p>    
                 </div>              
                 <button class="btn-register" onclick="validarFormulario()">Iniciar sesión</button>
             </div>
