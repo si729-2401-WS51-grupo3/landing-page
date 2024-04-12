@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #d6f5ff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registration {
+    padding: 50px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 100px;
+    max-width: 600px;
+    width: 90%;
+}
+.back-button{
+    font-size: 15px;
+}
+
+.registration .title {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #F9BFB7;
+}
+
+.registration .description {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.registration .form-group {
+    margin-bottom: 32px;
+    position: relative;
+    text-align: left;
+}
+
+.registration .form-group label {
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+}
+
+.label-container {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.registration input[type="email"],
+.registration input[type="password"] {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.error-message {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: red;
+    display: none;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.registration .btn-register {
+    background-color: #190933;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.registration .btn-register:hover {
+    background-color: #111;
+    transform: scale(1.1);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .registration {
+        padding: 30px;
+    }
+
+    .registration .title {
+        font-size: 28px;
+    }
+
+    .registration .description {
+        font-size: 18px;
+    }
+
+    .registration input[type="email"],
+    .registration input[type="password"] {
+        font-size: 14px;
+    }
+
+    .registration .btn-register {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
