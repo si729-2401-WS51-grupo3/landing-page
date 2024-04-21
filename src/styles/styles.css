@@ -114,7 +114,84 @@ header .navbar-list a:hover {
 
 .about {
     background: #D6F5FF no-repeat;
+
 }
+
+.about .box {
+    height: 50rem;
+	width: 100rem;
+	background: #FFFFFF;
+	text-align: center;
+	border-radius: 1rem;
+	box-shadow: 0 .3 5rem rgba(0, 0, 0, .5);
+	margin-bottom: 6rem;
+    margin:auto;
+}
+
+
+.about .box hr {
+    border: none;
+  height: 5px;
+  color: #6B9F9F;
+  background-color: #6B9F9F;
+  width: 80%;
+  margin: auto;
+}
+
+.box .title-section{
+    font-size: 50px;
+    margin-bottom: 12rem;
+}
+
+.about .box .vision{
+    position: absolute;
+    color: #6B9F9F;
+    font-size: 30px;
+    top: 24rem;
+    left: 25rem;
+}
+
+.about .box .mision{
+    position: absolute;
+    color: #6B9F9F;
+    font-size: 30px;
+    top: 24rem;
+    left: 55rem;
+}
+
+.about .box .valores{
+    position: absolute;
+    color: #6B9F9F;
+    font-size: 30px;
+    top: 24rem;
+    right: 24rem;
+}
+
+.about .box .vision_txt {
+    font-size: 20px;
+    position: absolute;
+    color: #939393;
+    top: 30rem;
+    left: 22rem;
+}
+
+.about .box .mision_txt {
+    font-size: 20px;
+    position: absolute;
+    color: #939393;
+    top: 30rem;
+    left: 51rem;
+}
+
+.about .box .valores_txt {
+    font-size: 20px;
+    position: absolute;
+    color: #939393;
+    top: 30rem;
+    right: 22rem;
+}
+
+
 .hom-container,
 .about-container,
 .contact-container {
@@ -160,7 +237,7 @@ header label {
     margin-left: 0;
     text-align: center;
     font-size: 2em;
-    margin-top: 5rem;
+    margin-top: 7rem;
     color: var(--primary-pink);
 }
 
@@ -245,6 +322,10 @@ button[type="submit"]:focus {
     color: #ffffff;
 }
 
+.section__container h1 {
+    margin-top: 7rem;
+}
+
 .subtitulo {
     color: #F9BFB7;
 
@@ -323,7 +404,7 @@ button[type="submit"]:focus {
 }
 
 .servicios {
-    margin-bottom: -10rem;
+    margin-bottom: 0rem;
 }
 
 .servicios h2 {
