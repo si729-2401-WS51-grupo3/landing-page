@@ -36,7 +36,6 @@ body {
 
 section {
     position: relative;
-    width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -47,7 +46,6 @@ section {
 }
 
 .home {
-    width: 100%;
     min-height: 100vh;
     background: url("https://github.com/MindCare-Panqueque/MindCare-LandingPage/assets/133830443/9eb8fe86-866f-485e-b7b0-a4e793cfb062");
     background-size: cover;
@@ -60,7 +58,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    right:0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,84 +110,6 @@ header .navbar-list a:hover {
     background-color: white;
 }
 
-.about {
-    background: #D6F5FF no-repeat;
-
-}
-
-.about .box {
-    height: 50rem;
-	width: 100rem;
-	background: #FFFFFF;
-	text-align: center;
-	border-radius: 1rem;
-	box-shadow: 0 .3 5rem rgba(0, 0, 0, .5);
-	margin-bottom: 6rem;
-    margin:auto;
-}
-
-
-.about .box hr {
-    border: none;
-  height: 5px;
-  color: #6B9F9F;
-  background-color: #6B9F9F;
-  width: 80%;
-  margin: auto;
-}
-
-.box .title-section{
-    font-size: 50px;
-    margin-bottom: 12rem;
-}
-
-.about .box .vision{
-    position: absolute;
-    color: #6B9F9F;
-    font-size: 30px;
-    top: 24rem;
-    left: 25rem;
-}
-
-.about .box .mision{
-    position: absolute;
-    color: #6B9F9F;
-    font-size: 30px;
-    top: 24rem;
-    left: 55rem;
-}
-
-.about .box .valores{
-    position: absolute;
-    color: #6B9F9F;
-    font-size: 30px;
-    top: 24rem;
-    right: 24rem;
-}
-
-.about .box .vision_txt {
-    font-size: 20px;
-    position: absolute;
-    color: #939393;
-    top: 30rem;
-    left: 22rem;
-}
-
-.about .box .mision_txt {
-    font-size: 20px;
-    position: absolute;
-    color: #939393;
-    top: 30rem;
-    left: 51rem;
-}
-
-.about .box .valores_txt {
-    font-size: 20px;
-    position: absolute;
-    color: #939393;
-    top: 30rem;
-    right: 22rem;
-}
 
 
 .hom-container,
@@ -241,6 +161,51 @@ header label {
     color: var(--primary-pink);
 }
 
+/*ABOUT SECTION*/
+.about {
+	background: #FFFFFF;
+    padding: 50px 0;
+}
+
+.box-about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: calc(33.33% - 40px);
+    margin-bottom: 20px;
+}
+
+.card__title {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card__content,.about-container {
+    color: #666;
+}
+
+.card__list {
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.mission, .vision, .values {
+    background-color:#d6f5ff79;
+}
+
+/*CONTACT US SECTION*/
 .contact-container {
     width: 80%;
     text-align: center;
@@ -285,19 +250,15 @@ textarea {
     border-radius: 5px;
     border: 1px solid #cccccc;
     background-color: #ffffff;
-    /* Rellenado de blanco */
     color: #555555;
-    /* Letras matizadas */
     font-size: 1em;
     transition: border-color 0.3s;
-    /* Transición suave del color del borde */
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
     border-color: #333333;
-    /* Borde al enfocar */
 }
 
 textarea {
@@ -463,7 +424,6 @@ button[type="submit"]:focus {
     max-width: var(--max-width);
     margin: auto;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* Ajuste agregado */
 }
 
 .price__card {
@@ -505,7 +465,6 @@ button[type="submit"]:focus {
     height: 3px;
     background-color: #fff;
     margin: 5px auto;
-    /* Alineación vertical al centro */
 }
 
 .footer-container {
@@ -554,6 +513,13 @@ ul li::marker {
 @media (max-width: 768px) {
     body {
       background-image: url("https://github.com/MindCare-Panqueque/MindCare-LandingPage/assets/133830443/9eb8fe86-866f-485e-b7b0-a4e793cfb062");
+    }
+    .card {
+        width: calc(50% - 40px);
+    }
+    
+    .box-about {
+        padding: 10px;
     }
  }
 
